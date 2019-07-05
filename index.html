@@ -1,15 +1,24 @@
-<form>
-	<label for="email"></label>
-	<input id="email" name="">
-	<label for="emailconf"></label>
-	<input id="emailconf">
-	<label for="country"></label>
-	<input id="country">
-	<label for="zipcode"></label>
-	<input id="zipcode">
-	<label for="password"></label>
-	<input id="password" name="">
-	<label for="passwordconf"></label>
-	<input id="passwordconf">
-
-</form>
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="stylesheet.css"></link>
+</head>
+<body>
+	<h1>Form Validation Practice</h1>
+	<form>
+		<span class="error" aria-live="polite"></span>
+		<label for="email">email</label>
+		<input id="email" type="email" name="email"><br><br>
+		<label for="emailconf">email confirmation</label>
+		<input id="emailconf" name="emailconf"><br><br>
+		<label for="country">country</label>
+		<input id="country"><br><br>
+		<label for="zipcode">zipcode</label>
+		<input id="zipcode"><br><br>
+		<label for="password">password</label>
+		<input id="password" maxlength="10" type="password"><br><br>
+		<label for="passwordconf">password confirmation</label>
+		<input id="passwordconf" maxlength="10" type="password"><br><br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+<script type="text/javascript" src="script.js"></script>
